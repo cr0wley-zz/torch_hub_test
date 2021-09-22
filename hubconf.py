@@ -7,7 +7,7 @@ import os
 MODEL_PATH = os.path.join("output", "model_wt.pth")
 
 # entry point
-def custom_model():
+def custom_model(pretrained=False, *args, **kwargs):
     # initialize model instance
     # load weights from path
     model = mlp.get_training_model()
